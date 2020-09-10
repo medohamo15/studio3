@@ -1,0 +1,769 @@
+.top-bar .cntr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.right-links {
+  position: relative;
+}
+
+.right-links, .right-links li {
+  float: right;
+}
+
+.right-links li a {
+  color: #fff;
+  display: block;
+  font-size: 13px;
+  padding: 12px 10px;
+}
+
+.nav-a-line {
+  position: absolute;
+  width: 100px;
+  bottom: -2px;
+  right: 0;
+  z-index: 3;
+}
+
+.nav-a-line u {
+  height: 3px;
+  width: 30%;
+  display: block;
+  content: '';
+  margin: 0 auto;
+}
+
+.p-staffBar {
+  display: none;
+}
+
+.social-icons {
+  margin-top: 4px;
+}
+
+.social-icons, .social-icons li {
+  float: left;
+}
+
+.social-icons a {
+  display: block;
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  position: relative;
+}
+
+.social-icons a:before {
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 101%;
+  bottom: -2px;
+  right: 0;
+  left: 0;
+  display: block;
+  content: '';
+  opacity: 0;
+}
+
+.social-icons a:hover:before {
+  top: -2px;
+  opacity: 1;
+}
+
+.fot-box .social-icons a:before {
+  display: none;
+}
+
+.social-icons a, .social-icons a i {
+  line-height: 36px;
+}
+
+.social-icons a i {
+  position: relative;
+  z-index: 2
+}
+
+/*---------------------------------------------------------*/
+.add-wrap {
+  margin: 0 0 20px;
+  text-align: center;
+}
+
+.add-wrap img {
+  max-width: 100%;
+}
+
+/*---------------------------------------------------------*/
+body[data-template=forum_list] .crumb-wrap {
+  display: none;
+}
+
+.p-body-main+.crumb-wrap {
+  margin-top: 14px;
+}
+
+.crumb-wrap {
+  position: relative;
+  margin-bottom: 9px;
+}
+
+.crumb-wrap .p-breadcrumbs li:first-child {
+  display: none;
+}
+
+.crumb-home {
+  display: block;
+  float: right;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.crumb-in {
+  margin-right: 42px;
+  padding: 9px 12px 4px;
+  min-height: 36px;
+}
+
+.crumb-home, .crumb-in {
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.p-title-value {
+  position: relative;
+  font-size: 17px;
+  padding-bottom: 10px;
+}
+
+.p-title-value:before {
+  display: block;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 4px;
+  width: 70px;
+  border-radius: 4px;
+}
+
+.p-breadcrumbs.p-breadcrumbs--bottom {
+  margin-top: 0;
+}
+
+/*---------------------------------------------------------*/
+.threads-silder-wrap {
+  overflow: hidden;
+}
+
+.threads-silder-wrap .block-header {
+  border-radius: 4px;
+  margin-bottom: 4px;
+}
+
+.threads-silder {
+  margin: 0 -7px 10px;
+  display: none;
+}
+
+.threads-silder.slick-initialized {
+  display: block;
+}
+
+.thread-box {
+  padding: 7px 7px 0;
+  border-radius: 4px;
+  background-color: #fff;
+  margin: 0 7px;
+}
+
+.thread-img {
+  display: block;
+  float: right;
+  width: 80px;
+  height: 80px;
+  padding: 1px;
+  border: 1px solid #eee;
+}
+
+.thread-img, .thread-img img {
+  border-radius: 4px;
+}
+
+.thread-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.thread-box div {
+  margin-right: 90px;
+}
+
+.thread-box h3, .thread-box p {
+  margin: 0 0 4px;
+  font-size: 15px;
+  line-height: 18px;
+  height: 40px;
+  overflow: hidden;
+}
+
+.thread-box p {
+  font-size: 13px;
+  line-height: 15px;
+  height: 64px;
+  color: #888;
+}
+
+.thread-meta {
+  display: block;
+  clear: both;
+  font-size: 13px;
+  background-color: #f9f9f9;
+  margin: 0 -7px 0;
+  padding: 4px;
+  border-radius: 0 0 4px 4px;
+  color: #868686;
+}
+
+.thread-meta span {
+  float: right;
+  display: block;
+  margin-left: 12px;
+}
+
+.thread-meta span:nth-child(3), .thread-meta span:nth-child(4) {
+  float: left;
+}
+
+.thread-meta em {
+  font-style: normal;
+}
+
+.threads-silder .slick-dots {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+  padding-top: 14px;
+}
+
+.threads-silder .slick-dots li {
+  display: inline-block;
+  margin: 0 4px;
+}
+
+.threads-silder .slick-dots li button {
+  text-indent: -100px;
+  overflow: hidden;
+  padding: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #a5a5a5;
+}
+
+.threads-silder .slick-dots li.slick-active button {
+  width: 30px;
+}
+
+/*---------------------------------------------------------*/
+.post-msg-header {
+  padding: 7px 9px;
+  border-bottom: 1px solid #eee;
+}
+
+.post-msg-header .message-attribution {
+  padding: 0;
+  border-width: 0;
+}
+
+.message-cell.message-cell--user, .message-cell.message-cell--action {
+  background-color: #fff;
+  border-left-color: #eee;
+}
+
+.message-userArrow {
+  display: none;
+}
+
+body .message-cell.message-cell--user {
+  flex: 0 0 180px;
+}
+
+.message-userExtras dl {
+  padding: 3px 30px 3px 6px;
+  border-radius: 3px;
+  background-color: #f3f3f3;
+  margin: 0 0 4px;
+  position: relative;
+  height: 24px;
+}
+
+.message-userExtras dl .fa, .u-info-style li a i {
+  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 24px;
+  width: 20px;
+  text-align: center;
+  line-height: 23px;
+  font-size: 13px;
+  color: #fff;
+}
+
+.message-userExtras dl .fa:after {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  display: block;
+  content: '';
+  border-style: solid;
+  border-width: 12px 7px 12px 0;
+  border-color: transparent;
+}
+.u-info-style-2 .message-userExtras dl .fa:after,.u-info-style-3 .message-userExtras dl .fa:after{
+  display: none;
+}
+.u-info-style-2  .message-userExtras dl,.u-info-style-3 .message-userExtras dl{
+  padding-right: 22px;
+}
+.f-website dd a {
+  padding-top: 3px;
+  display: inline-block;
+}
+
+.userBanner {
+  margin-bottom: 10px;
+}
+
+.message-main time.u-dt:before {
+  font-family: 'Font Awesome 5 Pro';
+  display: inline-block;
+  content: '\f017';
+  margin-left: 3px;
+}
+
+.message-avatar-wrapper, .avt-style a span {
+  border: 1px solid #ddd;
+  background-color: #fff;
+  padding: 2px;
+  border-radius: 3px;
+}
+
+.user-stat-w {
+  text-align: center;
+  padding-top: 5px;
+  margin: 0 0 9px;
+  text-align: center;
+}
+
+.user-msg-stat.icon-light-up {
+  color: #35d40b;
+}
+
+/*---------------------------------------------------------*/
+.contact-box,
+.foot {
+  background-color: #3d3d3d;
+  color: #fff;
+  padding: 25px 0;
+}
+
+.sperater {
+  position: relative;
+  width: 100px;
+  display: block;
+  margin: 0 auto 15px;
+  text-align: center;
+}
+
+.sperater:before {
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: block;
+  content: '';
+  position: absolute;
+  height: 2px;
+  background-color: #fff;
+  margin-top: -1px;
+  border-radius: 4px;
+}
+
+.sperater i {
+  margin: 0 auto;
+  display: block;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 5px solid #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.contact-box {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 15px 0;
+}
+
+.contact-box h3 {
+  text-align: center;
+  margin: 0 0 10px;
+  font-size: 21px;
+}
+
+.contact-box ul {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.contact-box li {
+  float: right;
+  width: 25%;
+}
+
+.contact-box div {
+  padding: 0 10px;
+  min-width: 33%;
+  margin: 0 auto;
+  font-size: 13px;
+}
+
+.contact-box ul div i {
+  display: block;
+  margin: 0 auto 5px;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  line-height: 60px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.contact-box ul div:hover i{
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
+.fot-box {
+  float: right;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.logo-box {
+  padding-right: 0;
+}
+
+.logo-box p {
+  font-size: 13px;
+  line-height: 17px;
+  margin: 0;
+}
+
+.fot-box h3 {
+  font-size: 16px;
+  position: relative;
+  padding-bottom: 13px;
+}
+
+.fot-box h3:before, .fot-box h3:after {
+  position: absolute;
+  content: '';
+  display: block;
+  bottom: 0;
+  right: 0;
+  height: 3px;
+  width: 30px;
+  background-color: #242424;
+}
+
+.fot-box h3:after {
+  right: 20px;
+  background-color: #fff;
+}
+
+.fot-box .ul-none a {
+  font-size: 13px;
+  color: #fff;
+  display: block;
+  line-height: 16px;
+  padding: 4px 0 7px;
+  position: relative;
+  max-width: 160px;
+}
+
+.fot-links .ul-none a:hover {
+  padding-right: 4px;
+}
+
+.fot-links .ul-none a:before {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  width: 0;
+  height: 1px;
+  display: block;
+  background-color: #fff;
+  content: '';
+}
+
+.fot-links .ul-none a:hover:before {
+  width: 100%;
+  opacity: 1;
+}
+
+.fot-box .social-icons {
+  float: none;
+  text-align: center;
+}
+
+.fot-box .social-icons li {
+  float: none;
+  display: inline-block;
+  margin: 0 2px;
+}
+
+.fot-box .social-icons a {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 0;
+}
+
+.fot-box .social-icons a:hover {
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.contact-us-btn {
+  clear: both;
+  display: block;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 4px;
+  margin: 0 auto;
+  max-width: 206px;
+  background-color: #fff;
+}
+
+a.contact-us-btn:hover {
+  opacity: 0.6;
+}
+
+.contact-us-btn i {
+  font-size: 17px;
+}
+
+.xf-ar {
+  background: transparent url(img/xf-ar.com.png) 0 0 no-repeat;
+  background-size: auto auto;
+  background-size: auto auto;
+  display: block;
+  float: left;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 90px;
+  height: 28px;
+}
+
+.xf-ar-tooltip {
+  background-color: #fff;
+  font-size: 14px;
+  padding: 0;
+  color: #999;
+}
+
+.xf-ar-tooltip .tooltipster-content {
+  padding: 0;
+}
+
+.xf-ar-tooltip h1 {
+  font-size: 15px;
+  padding: 15px 20px;
+  border-bottom: solid 1px #ddd;
+  margin: 0 0 10px;
+  min-width: 180px;
+}
+
+.xf-ar-tooltip b {
+  font-size: 13px;
+  display: block;
+  line-height: 20px;
+  padding: 2px 10px;
+  font-weight: normal;
+}
+
+.xf-ar-tooltip b:last-of-type {
+  margin-bottom: 10px;
+}
+
+.xf-ar-tooltip ul {
+  text-align: center;
+  padding: 10px 0;
+  border-top: solid 1px #ddd;
+  direction: ltr
+}
+
+.xf-ar-tooltip li {
+  display: inline-block;
+}
+
+.xf-ar-tooltip li a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.staff-b {
+  float: right;
+}
+
+.staff-b>a {
+  font-size: 12px;
+  color: #fff;
+}
+
+/*---------------------------------------------------------*/
+/*---------------------------------------------------------*/
+/*------------------------ colors ---------------------------------*/
+.ehda_header,.top-bar, .p-header, .block-header, .notice-ico, .top-bar, .p-sectionLinks, .p-nav-list .p-navEl.is-selected, .p-footer, .p-title-value:before, .contact-box,
+.fot-box h3:before, .message-userExtras dl .fa, .fm-rows-on .node-statsMeta dl+dl,
+.open-op-panel .option-toggle, .open-op-panel .option-panel h4,
+.fm-rows-on #fm-rows-on em, .fm-table #fm-table em, .sidebar-off #sidebar-off em, .fm-colors #fm-colors em, .sign--off #sign--off em,.wide-screen #wide-screen em,
+.button:not(.button--splitTrigger):hover, a.button:not(.button--splitTrigger):hover, .button.button--splitTrigger>.button-text:hover, a.button.button--splitTrigger>.button-text:hover, .button.button--splitTrigger>.button-menu:hover, a.button.button--splitTrigger>.button-menu:hover, .button:not(.button--splitTrigger):focus, a.button:not(.button--splitTrigger):focus, .button.button--splitTrigger>.button-text:focus, a.button.button--splitTrigger>.button-text:focus, .button.button--splitTrigger>.button-menu:focus, a.button.button--splitTrigger>.button-menu:focus, .button:not(.button--splitTrigger):active, a.button:not(.button--splitTrigger):active, .button.button--splitTrigger>.button-text:active, a.button.button--splitTrigger>.button-text:active, .button.button--splitTrigger>.button-menu:active, a.button.button--splitTrigger>.button-menu:active, .button.button--primary, a.button.button--primary, .menu-header, .overlay-title, .threads-silder .slick-dots li.slick-active button,.block-minorHeader,.p-staffBar-link:hover,.u-info-style li a i,.button.button--scroll, a.button.button--scroll,.at-t h3::before {
+  background-color: #218c74;
+}
+
+.p-navEl.is-selected .p-navEl-link u {
+  border-bottom-color: #218c74;
+}
+
+.message-userExtras dl .fa:after, .menu-linkRow.is-selected, .menu-linkRow:hover, .menu-linkRow:focus {
+  border-right-color: #218c74;
+}
+
+.fr-toolbar {
+  border-top-color: #218c74;
+}
+
+a, .p-nav-list .p-navEl, .node-icon i:before, .p-title-value, .node-title a, .node-extra a, .node--forum .pairs>dd, .menu-linkRow.is-selected, .menu-linkRow:hover, .menu-linkRow:focus, .f-stat .pairs i,
+.f-stat .pairs dd, .f-stat .pairs dd a, .admin-text {
+  color: #218c74;
+}
+
+.sperater i, .u-info-style li:nth-child(2) a, .u-info-style-2 .message-userExtras dl {
+  border-color: #218c74;
+}
+
+.notices li:nth-child(3n+2) .notice-ico {
+  background-color: #41B4FF;
+}
+
+.notices li:nth-child(3n+3) .notice-ico, .nav-a-line u {
+  background-color: #FF9100;
+}
+
+.node--unread .node-icon i:before {
+  color: #FF9100;
+}
+
+.notices li:nth-child(3n+4) .notice-ico {
+  background-color: #AB70F5;
+}
+
+.p-footer a, .open-op-panel .option-toggle, .open-op-panel .option-panel h4, .menu-header, .overlay-title {
+  color: #fff;
+}
+
+.fm-rows-on .node--forum .pairs>dd,.block-minorHeader,.button.button--scroll, a.button.button--scroll {
+  color: #fff !important;
+}
+
+.menu-content {
+  border-top-color: #fff;
+}
+
+.menu-arrow {
+  border-bottom-color: #fff;
+}
+
+.menu-row.menu-row--highlighted, .input:focus, .input, .input.is-focused, .menu-linkRow.is-selected, .menu-linkRow:hover, .menu-linkRow:focus {
+  background-color: #f3f3f3;
+}
+
+/*------------------------ //colors ---------------------------------*/
+@media screen and (max-width: 1200px) {
+  .cntr {
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .fot-box {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .social-icons {
+    float: none;
+    clear: both;
+    text-align: center;
+  }
+
+  .social-icons li {
+    float: none;
+    display: inline-block;
+  }
+
+  .nav-a-line {
+    display: none !important;
+  }
+
+  .top-bar .cntr {
+    border-bottom-width: 0;
+  }
+
+  .right-links li a {
+    padding: 2px;
+  }
+
+  .p-nav {
+    background-color: #3D3D3D !important;
+  }
+
+  .contact-box li {
+    width: 50%;
+  }
+
+  .contact-box ul div i {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .fot-box {
+    width: auto;
+    float: none;
+    padding: 0;
+  }
+
+  .notc-icon {
+    top: 18px;
+  }
+}
